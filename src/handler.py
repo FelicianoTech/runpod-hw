@@ -38,8 +38,8 @@ def handler(job):
         prompt=prompt,
         width=imageWidth,
         height=imageHeight,
-        num_inference_steps=5,
-        guidance_scale=0.0,
+        num_inference_steps=10,
+        guidance_scale=7.5,
     ).images[0]
 
     print(f"Time taken: {time.time() - time_start}")
